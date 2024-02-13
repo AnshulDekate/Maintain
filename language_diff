@@ -1,0 +1,86 @@
+List of constructs in different languages and how they differ or align
+
+Block of code:
+C++ - {}
+Java - {}
+Go - {}
+Python - :
+
+Terminal out:
+C++ - cout<<”aa”;
+Java - System.out.println(“aa”);
+Go - fmt.Println(“aa”)
+Python - print(“aa”)
+
+Length: 
+C++ - a.size();
+Java - a.length
+Go - len(a)
+Python - len(a)
+
+Fundamental types:
+C++ - int, float, string, char
+Java - int, float, String, char(2)
+Go - int, float, string, rune
+Python - Interpreted, use str() and int() for casting
+
+Static function in class:
+C++ - static void f(){}
+Java - static void f(){}
+Go - Everything is package level
+Python - @staticmethod/@classmethod
+         def f():
+
+Method overloading:
+C++ - yes
+Java - yes
+Go - No
+Python - No
+
+Constructor:
+C++ - ClassName()
+Java - ClassName()
+Go - No, but you can
+Python - __int__
+
+Access Specifier:
+C++ - public, private, protected
+Java - public, private, protected
+Go - Package level, capital is exported
+Python - Everything public, convention, _ is protected, __ is private
+
+Code organization:
+C++ - Header files with namespace (definition), cpp files (implementation)
+Java - Directory as Package, “package name” in each file
+Go - Directory as Package, “package name” in each file
+Python - Directory as Package with __init__.py in the directory, filelevel namespacing as well
+
+File level namespacing:
+C++ - No
+Java - Yes
+Go - No
+Python - Yes
+
+After compilation namespacing:
+C++ - namespace name
+Java - package name
+Go - package name
+Python - __init__.py
+
+Entrypoint:
+C++ - Single main function is checked by compiler
+Java - Specify the classname containing the main function
+Go - Single main function is checked by compiler
+Python - No compilation,  entrypoint is a file 
+
+Exceptions:
+C++ - Try-catch, Catch all is like catch(...), throw
+Java - Try-catch-finally, throw
+Go - If else return err
+Python - Try-except, raise
+
+Dependencies:
+C++ - Download source code and do cmake 
+Java - Maven (.pom config)
+Go - Github (.mod config)
+Python - Pip packages, wheel files, or zip files (requirements file)
